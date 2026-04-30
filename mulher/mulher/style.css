@@ -1,0 +1,207 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Bricolege Grotesque';
+    font-size: 100px;
+    font-weight: 700;
+    background-color: #862e2e;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+
+/* Estilos Gerais para o Header e Nav */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #7B0F33;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    gap: 200px;               /* Espaçamento entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo dos Links e Botão/Details */
+.nav-item, 
+.menuSuspenso summary {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 35px;
+    font-family: 'Bricolage Grotesque', cursive;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none; /* Remove a setinha do details */
+    transition: color 0.3s;
+}
+
+.nav-item:hover,
+.menuSuspenso summary:hover {
+    color: #fce4ec; /* Cor no hover */
+    text-decoration: underline;
+    transition: border-color 0.3s;
+
+}
+
+/* Estilo do Menu Suspenso (Dropdown) */
+.menuSuspenso details {
+    position: relative;
+}
+
+.menuConteudo {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px;
+    z-index: 10;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menuConteudo a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #7B0F33;
+    font-family: 'Bricolage Grotesque', cursive;
+    padding: 5px;
+    transition: background 0.3s;
+}
+
+.menuConteudo a:hover {
+    background-color: #f3e5f5;
+    color: #7B0F33;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7B0F33;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #7B0F33;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+/* CARROSSEL */
+
+.carrossel {
+    width: 100%;
+    Height: 950px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 10s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    45% { transform: translateX(0); }
+
+    50% { transform: translateX(-100%); }
+    95% { transform: translateX(-100%); }
+
+    100% { transform: translateX(0); }
+}
+
+/* PERSONALIDADES */
+
+.personalidades {
+    text-align: center;
+}
+
+.personalidades h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+    gap: 40x;
+    flex-wrap: nowrap; /* impede quebrar linha */
+}
+
+.personalidade {
+    max-width: 100%;
+    overflow: hidden;
+    align-self: center;
+    padding: 0;
+    transition: 0.3s;
+    border: 0;
+}
+
+.personalidade img {
+    width: 1900px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
