@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background-image: url('layover.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;    /* faz a imagem ocupar a tela toda */
+  min-height: 100vh;         /* faz c que o corpo tenha a altura da tela */
+}
+button{
+background-color:black;
+font-size: 40px;
+margin: 10px;
+padding: 15px 30px;
+color:white;
+border-radius: 15px;
+width: 200px;
+border: none;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+h1 {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-size:50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.album {
+    padding-top: 0%;
+    margin-top: 0%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.titulo {
+ text-align: center;   
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="titulo">
+<h1>VAMOS OUVIR O ÁLBUM LAYOVER?</h1>
+</div>
+<div class="center">
+    <img class="album" src="yeon.jpg"/>
+</div>
+<div class="botoes">
+        <button onclick="sim()" class="botaoS">SIM</button>
+        <button id="botao" onmouseover="desvia()" class="botaoN">NÃO</button>
+    </div>
+
+    <script>
+        function album() {
+            location.href = "https://youtu.be/HYzyRHAHJl8?si=HT5DSxU04dezweW5"
+        }
+        function sim() {
+            location.href = "https://youtu.be/HYzyRHAHJl8?si=HT5DSxU04dezweW5"
+        }
+
+        let botao = document.getElementById("botao");
+
+        function desvia() {
+            botao.style.position = "absolute";
+            // Adicionamos valores aleatórios para as posições
+            botao.style.bottom = gerarPosicao(10, 80);
+            botao.style.left = gerarPosicao(10, 80);
+        }
+
+        function gerarPosicao(min, max) {
+            return (Math.random() * (max - min) + min) + "%";
+        }
+    </script>
+</body>
+</html>
+</script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height:100vh;
+margin:0;
+flex-direction: column;
+background-color: rgb(255, 209, 209);
+height: 100vh;
+font-size: larger;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(195, 9, 114);
+    font-size: 50px;
+}
+
+input {
+    width: 400px;
+    height:38px;
+    font-size: medium;
+    border-radius: 15px;
+    border-color: rgb(229, 0, 76);
+    padding: 3px 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    border-color: rgb(195, 9, 114);
+
+}
+button {
+    height: 50px;
+    width: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 85, 165); 
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px; 
+    border: none;
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background 0.3s ease; 
+}
+ul {
+    background: #ffffff;
+    padding: 15px 20px 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 5px solid #b70074; 
+    box-shadow: 0 2px 5px rgba(87, 8, 8, 0.188);
+    transition: transform 0.2s;
+    color: #c21515;
+
+}
