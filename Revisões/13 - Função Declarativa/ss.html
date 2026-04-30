@@ -1,0 +1,26 @@
+{
+  "background.fullscreen": {
+    // `images` supports online and local images, as well as folders.
+    "images": [
+      // online images, only `https` is allowed.
+      "https://hostname/online.jpg",
+      // local images
+      "file:///local/path/img.jpeg",
+      "/home/xie/downloads/img.gif",
+      "C:/Users/xie/img.bmp",
+      "D:\\downloads\\images\\img.webp",
+      // local folders
+      "/home/xie/images",
+      // data URL
+      "data:image/*;base64,<base64-data>"
+    ],
+    "opacity": 0.1,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+  },
+  // `sidebar` and `panel` have the same config as `fullscreen`
+  "background.sidebar": {},
+  "background.panel": {}
+}
