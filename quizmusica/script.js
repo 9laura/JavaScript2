@@ -188,7 +188,7 @@ function verificarResposta(index) {
 function criarFloresCaindo() {
   for (let i = 0; i < 25; i++) {
     let flor = document.createElement("img");
-    flor.src = "img/flor.jpg";
+    flor.src = "img/flor.png";
     flor.classList.add("flor-caindo");
 
     flor.style.left = Math.random() * 100 + "vw";
