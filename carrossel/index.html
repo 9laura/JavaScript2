@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosseis - Produtos e Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="secao-carrossel">
+            <h2>Com botões</h2>
+            <div class="carrossel-wrapper">
+                <div class="carrossel" id="carrossel-produto">
+                    <img src="img/img1.jpg" alt="Produto Vista 1" class="img ativa">
+                    <img src="img/img2.jpg" alt="Produto Vista 2" class="img">
+                    <img src="img/img3.jpg" alt="Produto Vista 3" class="img">
+                </div>
+        
+            </div>
+
+            <div class="controls">
+                <button onclick="carrosselProduto.voltar()">Anterior</button>
+                <button onclick="carrosselProduto.proximo()">Próximo</button>
+            </div>
+        </section>
+
+        <section class="secao-carrossel">
+            <h2>A cada 3 segundos!</h2>
+            <div class="carrossel" id="carrossel-filmes">
+                <img src="img/img1.jpg" alt="Filme 1" class="img ativa">
+                <img src="img/img2.jpg" alt="Filme 2" class="img">
+                <img src="img/img3.jpg" alt="Filme 3" class="img">
+            </div>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
