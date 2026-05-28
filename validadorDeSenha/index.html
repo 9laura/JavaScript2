@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <form id="formCadastro">
+
+      <h2>Cadastro</h2>
+
+      <input type="text" id="nome" placeholder="Nome" required>
+
+      <input type="email" id="email" placeholder="Email" required>
+
+      <input type="password" id="senha" placeholder="Senha" required>
+
+      <input type="password" id="confirmarSenha" placeholder="Confirmar senha" required>
+
+      <button type="submit">Cadastrar</button>
+
+      <div class="regras">
+        <p id="minuscula">Letra minúscula</p>
+        <p id="maiuscula">Letra maiúscula</p>
+        <p id="numero">Número</p>
+        <p id="especial">Caractere especial</p>
+        <p id="tamanho">Mínimo 12 caracteres</p>
+      </div>
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
