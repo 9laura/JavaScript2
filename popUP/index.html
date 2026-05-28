@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Popups</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina">
+        <h1>Exemplos de Popups</h1>
+        <div class="acoes">
+            <button class="botao" id="abrir-login">Popup Login</button>
+            <button class="botao" id="abrir-confirmacao">Popup Confirmação</button>
+            <button class="botao" id="abrir-imagem">Popup Imagem</button>
+            <button class="botao" id="abrir-curiosidade">Popup Curiosidade</button>
+            <button class="botao" id="abrir-aviso">Popup Aviso (adivinhe)</button>
+        </div>
+        <div class="janela" id="janela-login" aria-hidden="true">
+            <div class="conteudo-modal">
+                <button class="fechar" data-fechar="janela-login">×</button>
+                <h2>Login</h2>
+                <label>Usuário<input id="login-usuario" placeholder="usuário"></label>
+                <label>Senha<input id="login-senha" type="password" placeholder="senha"></label>
+                <div class="linha">
+                    <button class="botao primario" id="login-entrar">Entrar</button>
+                    <button class="botao" data-fechar="janela-login">Cancelar</button>
+                </div>
+                <p class="dica" id="login-dica"></p>
+            </div>
+        </div>
+        <div class="janela" id="janela-confirmacao" aria-hidden="true">
+            <div class="conteudo-modal">
+                <button class="fechar" data-fechar="janela-confirmacao">×</button>
+                <h2>Confirmação</h2>
+                <p id="texto-confirmacao">Deseja realmente excluir este item?</p>
+                <div class="linha">
+                    <button class="botao perigo" id="confirmar-sim">Sim</button>
+                    <button class="botao" data-fechar="janela-confirmacao">Não</button>
+                </div>
+            </div>
+        </div>
+        <div class="painel">
+            <p>Clique na imagem para ampliar:</p>
+            <div class="miniaturas">
+                <img class="miniatura" src="img/img1.jpg" alt="Imagem 1">
+                <img class="miniatura" src="img/img2.jpg" alt="Imagem 2">
+                <img class="miniatura" src="img/img3.jpg" alt="Imagem 3">
+            </div>
+        </div>
+        <div class="janela" id="janela-imagem" aria-hidden="true">
+            <div class="conteudo-modal imagem-modal">
+                <button class="fechar" data-fechar="janela-imagem">×</button>
+                <img id="imagem-grande" src="" alt="ampliada">
+            </div>
+        </div>
+        <div class="janela" id="janela-curiosidade" aria-hidden="true">
+            <div class="conteudo-modal">
+                <button class="fechar" data-fechar="janela-curiosidade">×</button>
+                <h2>Curiosidade</h2>
+                <p id="texto-curiosidade">Aqui vai uma curiosidade...</p>
+                <div class="linha">
+                    <button class="botao" id="curiosidade-nova">Outra</button>
+                    <button class="botao" data-fechar="janela-curiosidade">Fechar</button>
+                </div>
+            </div>
+        </div>
+        <div class="janela" id="janela-aviso" aria-hidden="true">
+            <div class="conteudo-modal">
+                <button class="fechar" data-fechar="janela-aviso">×</button>
+                <h2>Adivinhe a senha</h2>
+                <p>Digite a senha correta para ver o popup de parabéns.</p>
+                <input id="entrada-adivinhar" placeholder="sua tentativa">
+                <div class="linha">
+                    <button class="botao primario" id="enviar-adivinhar">Enviar</button>
+                    <button class="botao" data-fechar="janela-aviso">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <div class="janela" id="janela-resultado" aria-hidden="true">
+            <div class="conteudo-modal">
+                <button class="fechar" data-fechar="janela-resultado">×</button>
+                <h2 id="titulo-resultado"></h2>
+                <p id="texto-resultado"></p>
+                <div class="linha">
+                    <button class="botao" data-fechar="janela-resultado">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

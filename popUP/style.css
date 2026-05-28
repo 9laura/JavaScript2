@@ -1,0 +1,39 @@
+:root{
+    --bg:#fff6fb;
+    --accent:#ff92c2;
+    --accent-2:#ff6dad;
+    --dark:#3a1f33;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:linear-gradient(180deg,var(--bg),#fff);color:var(--dark);margin:0;padding:24px;}
+.pagina{max-width:980px;margin:0 auto}
+h1{text-align:center;margin-bottom:18px}
+.acoes{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
+.botao{background:#fff;border:1px solid rgba(0,0,0,0.08);padding:10px 16px;border-radius:10px;cursor:pointer}
+.botao.primario{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border:none}
+.botao.perigo{background:#ff7b7b;color:#fff;border:none}
+.painel{max-width:740px;margin:0 auto 18px;text-align:center}
+.miniaturas{display:flex;gap:12px;justify-content:center}
+.miniatura{width:160px;height:110px;object-fit:cover;border-radius:8px;cursor:pointer;border:4px solid rgba(255,255,255,0.7);box-shadow:0 8px 18px rgba(0,0,0,0.06)}
+
+/* modal base */
+.janela{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);padding:24px}
+.janela[aria-hidden="false"]{display:flex}
+.conteudo-modal{background:#fff;padding:18px;border-radius:12px;min-width:280px;max-width:720px;box-shadow:0 18px 40px rgba(58,31,51,0.12);position:relative}
+.conteudo-modal.imagem-modal{padding:12px;background:transparent;border-radius:12px}
+.conteudo-modal img{max-width:90vw;max-height:80vh;border-radius:8px;display:block}
+.fechar{position:absolute;right:12px;top:10px;border:0;background:transparent;font-size:20px;cursor:pointer}
+.linha{display:flex;gap:10px;justify-content:flex-end;margin-top:12px}
+label{display:block;margin-top:10px}
+input{padding:10px;border-radius:8px;border:1px solid #eee;width:100%;margin-top:6px}
+.dica{margin-top:8px;color:#6b2a45}
+
+/* small responsive tweaks */
+@media (max-width:520px){.miniaturas{flex-direction:column;align-items:center}.miniatura{width:260px;height:160px}}
+
+/* result styles */
+.resultado-sucesso{background:linear-gradient(90deg,#e6ffef,#c8ffd9)}
+.resultado-erro{background:linear-gradient(90deg,#ffe6ea,#ffd1d8)}
+
+/* accessibility focus */
+.botao:focus,.fechar:focus,input:focus{outline:3px solid rgba(255,150,185,0.25);outline-offset:4px}
